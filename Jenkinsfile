@@ -25,7 +25,7 @@ pipeline {
 
     parameters{
         string(name:'SPEC', defaultValue: "cypress/e2e/**/**",description: "Enter the script path that you want to execute")
-        choice (name: 'BROWSER', chhoices:['chrome','edge','firefox'], description: "Choose the browser where you want to execute your scripts")
+        choice (name: 'BROWSER', choices:['chrome','edge','firefox'], description: "Choose the browser where you want to execute your scripts")
     }
 
     options{
@@ -61,7 +61,7 @@ pipeline {
                         includeProperties : true,
                         jdk : 'java',
                         properties : [[key: 'release version', value: '4.0.2']],
-                        reprtBuildPolicy: 'AlWAYS',
+                        reportBuildPolicy: 'AlWAYS',
                         results: [[path: 'allure-reseults']]
                     ])
                 }
