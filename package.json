@@ -13,6 +13,7 @@
     "cypress:runDefault": "cypress run -s ./cypress/e2e/*.cy.js",
     "cypress:chrome": "cypress run -s ./cypress/e2e/*.cy.js -b chrome",
     "cypress:edge": "cypress run -s ./cypress/e2e/*.cy.js -b edge",
+    "cypress:firefox": "cypress run -s ./cypress/e2e/*.cy.js -b firefox",
     "cypress:allure": "cypress run -s ./cypress/e2e/*.cy.js -b chrome --env allure=true"
   },
   "keywords": [
